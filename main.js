@@ -17,7 +17,11 @@ let won = false
 function setup() {
 
 	grid = createGrid()
+<<<<<<< HEAD
 	createCanvas(grid[numRows - 1][numCols - 1].x + size + gapSize, grid[numRows - 1][numCols - 1].y + size + gapSize)
+=======
+	createCanvas(windowWidth, windowHeight);
+>>>>>>> 31868b69297c0900607db1f689113399f12a3e2d
 }
 
 class Block {
@@ -75,7 +79,10 @@ function changeSize(){
 		numCols = document.getElementById('numColumns').value
 		grid = createGrid()
 		reset()
+<<<<<<< HEAD
 		createCanvas(grid[numRows - 1][numCols - 1].x + size + gapSize, grid[numRows - 1][numCols - 1].y + size + gapSize);
+=======
+>>>>>>> 31868b69297c0900607db1f689113399f12a3e2d
 }
 
 function players(rand){

@@ -1,13 +1,18 @@
 body{
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
+=======
+
+>>>>>>> 31868b69297c0900607db1f689113399f12a3e2d
 }
 
 .p5Canvas {
     display: block;
+<<<<<<< HEAD
     margin: auto;
     width: auto;
 }
@@ -41,3 +46,9 @@ button{
     font-size: 20px;
     font-family: 'Comfortaa', cursive;
 }
+=======
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+>>>>>>> 31868b69297c0900607db1f689113399f12a3e2d
