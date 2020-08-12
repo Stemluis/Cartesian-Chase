@@ -17,7 +17,6 @@ let won = false
 function setup() {
 	grid = createGrid()
 	createCanvas(grid[numRows - 1][numCols - 1].x + size + gapSize, grid[numRows - 1][numCols - 1].y + size + gapSize)
-	createCanvas(windowWidth, windowHeight);
 }
 
 class Block {
