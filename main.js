@@ -17,12 +17,6 @@ let won = false
 function setup() {
 
 	grid = createGrid()
-
-	// let WINDOW_WIDTH = grid[numRows - 1][numCols - 1].x + size + gapSize
-	// let WINDOW_HEIGHT = grid[numRows - 1][numCols - 1].y + size + gapSize
-	//
-  // let VIRTUAL_WIDTH = WINDOW_WIDTH
-  // let VIRTUAL_HEIGHT = WINDOW_HEIGHT
 	createCanvas(windowWidth, windowHeight);
 }
 
