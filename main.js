@@ -82,7 +82,7 @@ function players(rand){
         grid[lastPos[0]][lastPos[1]].color = 'red'
     }
 
-    if (lastPos[0] == 0){
+		if (lastPos[0] == 0){
         lastPos[1] = lastPos[1] + 1
     } else if (lastPos[1] == numCols - 1){
         lastPos[0] = lastPos[0] - 1
@@ -97,7 +97,7 @@ function players(rand){
     }
     num += 1
 
-    if (num > 0){
+    if (!(num % 2 == 0)){
         grid[lastPos[0]][lastPos[1]].color = 'green'
     }
 }
@@ -105,7 +105,6 @@ function players(rand){
 function reset(){
     num = 0
 		alerted = false
-		console.log(numRows + "\t" + numCols)
     lastPos = [numRows - 1, 0]
     for (let r = 0; r < numRows; r++){
         for (let c = 0; c < numCols; c++){
@@ -116,12 +115,11 @@ function reset(){
 
 function draw() {
 	clear()
-	if (num % 2 == 0 && !(lastPos[0] == 0 && lastPos[1] == numCols - 1)){
-        players(floor(random(1,4)))
-				console.log(grid[lastPos[0]][lastPos[1]].color)
-  }else if (lastPos[0] == 0 && lastPos[1] == numCols - 1){
-				clear()
-				reset()
+	if ((num % 2 == 0) && !(lastPos[0] == 0 && lastPos[1] == numCols - 1)){
+      players(floor(random(1,4)))
+  } else if(lastPos[0] == 0 && lastPos[1] == numCols - 1){
+			alert(grid[lastPos[0]][lastPos[1]].color.charAt(0).toUpperCase() + grid[lastPos[0]][lastPos[1]].color.slice(1) + " wins!")
+			reset()
 	}
 	for (var r = 0; r < numRows; r++) {
 		for (var c = 0; c < numCols; c++) {
