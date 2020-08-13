@@ -4,6 +4,44 @@ body{
     align-items: center;
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
+    background: linear-gradient(254deg, #e1e456, #94b6d2, #f53636, #1bc37a, #b924e4, #24c9e4, #e4e024);
+    background-size: 1400% 1400%;
+    -webkit-animation: AnimationName 34s ease infinite;
+    -moz-animation: AnimationName 34s ease infinite;
+    animation: AnimationName 34s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
 }
 
 .p5Canvas {
@@ -25,6 +63,7 @@ input{
     margin: 10px;
     border-radius: 20px;
     outline: none;
+    background-color: transparent;
     text-align: center;
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
